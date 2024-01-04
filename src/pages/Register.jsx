@@ -69,15 +69,16 @@ const Register = () => {
   console.log(username);
 
   return (
-    <div className="p-3 my-5 fluid mt-2 ">
+    <div className="p-3 my-5 fluid">
       <div className="row ">
-        <div className="col-xs-12 col-md-6 -mt-2 anima-img  d-flex justify-content-center h-full">
+        <div className="col-xs-12 col-md-6 -mt-2 anima-img  d-flex justify-content-center border border-white" style={{marginTop : "-5rem", height : "80%"}}>
           <img
+          style={{objectFit : "fit"}}
             src={register}
             // src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
             className="img-fluid"
             alt="Phone image"
-            width="60%"
+            
           />
           <img />
         </div>
@@ -212,7 +213,7 @@ const Register = () => {
             </form>
             <div className="col-xs-12 d-flex justify-content-left mt-4">
               <p className="fw-semibold">
-                Already I have an account <Link to="/login">Sign Up</Link>
+                Already I have an account <Link to="/login">Sign In</Link>
               </p>
             </div>
             <div className="col-xs-12 d-flex justify-content-center mt-1">
