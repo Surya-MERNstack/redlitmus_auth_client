@@ -174,7 +174,7 @@ const Register = () => {
                   <label
                     htmlFor="formControlLgPassword"
                     className="form-label fw-semibold"
-                    style={{ fontSize: "1rem", }}
+                    style={{ fontSize: "1rem", zIndex : "1"}}
                   >
                     Password
                   </label>

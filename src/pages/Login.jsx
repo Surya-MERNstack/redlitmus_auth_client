@@ -69,7 +69,7 @@ const Login = () => {
   return (
     <div className="p-3 my-5 fluid">
       <div className="row mx-4 ">
-        <div className="col-xs-12 col-md-6 mt-auto">
+        <div className="col-xs-12 col-md-6 mt-auto anima-img">
           <img
             src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
             className="img-fluid"
@@ -78,7 +78,8 @@ const Login = () => {
         </div>
 
         <div className="col-xs-12 col-md-6" style={{ marginTop: "4rem" }}>
-          <div className="fw-semibold">
+         <div className="row mx-2 anima-form">
+         <div className="fw-semibold">
             <h2
               style={{
                 fontWeight: "bold",
@@ -92,8 +93,8 @@ const Login = () => {
           </div>
 
           <div className="row mt-3" style={{ fontSize: "1.3rem" }}>
-            <form action="" onSubmit={handleSubmit}>
-              <div className="col-xs-12">
+            <form action="" onSubmit={handleSubmit} >
+              <div className="col-xs-12 ">
                 <div className={`mb-4 mt-4 ${emailFocused ? "focused" : ""}`}>
                   <label
                     htmlFor="formControlLgEmail"
@@ -164,7 +165,7 @@ const Login = () => {
                   <label
                     htmlFor="formControlLgPassword"
                     className="form-label fw-semibold"
-                    style={{ fontSize: "1rem", }}
+                    style={{ fontSize: "1rem",zIndex : "1" }}
                   >
                     Password
                   </label>
@@ -210,6 +211,7 @@ const Login = () => {
               </div>
             </div>
           </div>
+         </div>
         </div>
       </div>
     </div>

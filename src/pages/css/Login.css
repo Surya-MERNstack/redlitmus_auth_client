@@ -60,3 +60,31 @@
     font-size: 1.2rem; /* Icon size */
   }
   
+
+
+  
+.anima-img {
+  animation: img 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.anima-form {
+  animation: forms 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+@keyframes img {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes forms {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
