@@ -20,13 +20,6 @@
   }
   
 
-  .eye {
-    position: absolute;
-    top: -4rem;
-    right: 2rem;
-    /* z-index: -1; */
-    background: #ff0000;
-  }
 
 
   .btn-hover-effect{
@@ -44,3 +37,26 @@
     background: white;
     color: #7352C7;
   }
+
+  
+  .relative {
+    position: relative;
+  }
+  
+  /* Eye icon styles */
+  .eyes {
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+  }
+  
+  /* Eye icon SVG styles */
+  .eyes svg {
+    color: #000; /* Icon color */
+    font-size: 1.2rem; /* Icon size */
+  }
+  

@@ -117,7 +117,7 @@ const Register = () => {
                     // onBlur={handleUsernameBlur}
 
                     name="username"
-                    style={{ width: "70%" }}
+                    style={{ width: "70%",paddingTop: "1.2rem",textAlign : "left" }}
                   />
                 </div>
                 <div className={`mb-4 mt-4 ${emailFocused ? "focused" : ""}`}>
@@ -138,7 +138,7 @@ const Register = () => {
                     // onBlur={handleEmailBlur}
 
                     name="email"
-                    style={{ width: "70%" }}
+                    style={{ width: "70%",paddingTop: "1.2rem",textAlign : "left" }}
                   />
                 </div>
                 {/* <div className={`mb-4 ${passwordFocused ? "focused" : ""}`}>
@@ -174,7 +174,7 @@ const Register = () => {
                   <label
                     htmlFor="formControlLgPassword"
                     className="form-label fw-semibold"
-                    style={{ fontSize: "1rem" }}
+                    style={{ fontSize: "1rem", }}
                   >
                     Password
                   </label>
@@ -187,7 +187,7 @@ const Register = () => {
                       name="password"
                       onChange={handlePasswordChange}
                       onFocus={handlePasswordFocus}
-                      style={{ width: "70%" }}
+                      style={{ width: "70%",paddingTop: "1.2rem",textAlign : "left" }}
                     />
                     <button
                       className="bg-white fw-4 eye-icon"
