@@ -57,7 +57,7 @@ const Register = () => {
     }
     if(email === "") toast.error("enter the email")
     const strongPasswordRegex =
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{5,}$/;
     if (!strongPasswordRegex.test(password)) {
       return toast.error(
         "Password should be at least 8 characters one special character among @$!%*?&"
