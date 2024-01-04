@@ -69,21 +69,23 @@ const Register = () => {
   console.log(username);
 
   return (
-    <div className="p-3 my-5 fluid">
-      <div className="row ">
-        <div className="col-xs-12 col-md-6 -mt-2 anima-img  d-flex justify-content-center " style={{marginTop : "-5rem", height : "80%"}}>
+    <div className="p-3  fluid">
+      <div className="row mt-3 ">
+        <div
+          className="col-xs-12 col-md-6  anima-img  d-flex justify-content-center "
+          style={{ marginTop: "-3rem", height: "80%" }}
+        >
           <img
-          style={{objectFit : "fit"}}
+            style={{ objectFit: "fit" }}
             src={register}
             // src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
             className="img-fluid"
             alt="Phone image"
-            
           />
           <img />
         </div>
 
-        <div className="col-xs-12 col-md-6" >
+        <div className="col-xs-12 col-md-6">
           <div className="row mx-2 anima-form mt-5">
             <div className="fw-semibold">
               <h2
@@ -119,7 +121,11 @@ const Register = () => {
                     // onBlur={handleUsernameBlur}
 
                     name="username"
-                    style={{ width: "70%",paddingTop: "1.2rem",textAlign : "left" }}
+                    style={{
+                      width: "70%",
+                      paddingTop: "1.2rem",
+                      textAlign: "left",
+                    }}
                   />
                 </div>
                 <div className={`mb-4 mt-4 ${emailFocused ? "focused" : ""}`}>
@@ -140,7 +146,11 @@ const Register = () => {
                     // onBlur={handleEmailBlur}
 
                     name="email"
-                    style={{ width: "70%",paddingTop: "1.2rem",textAlign : "left" }}
+                    style={{
+                      width: "70%",
+                      paddingTop: "1.2rem",
+                      textAlign: "left",
+                    }}
                   />
                 </div>
                 {/* <div className={`mb-4 ${passwordFocused ? "focused" : ""}`}>
@@ -176,7 +186,7 @@ const Register = () => {
                   <label
                     htmlFor="formControlLgPassword"
                     className="form-label fw-semibold"
-                    style={{ fontSize: "1rem", zIndex : "1"}}
+                    style={{ fontSize: "1rem", zIndex: "1" }}
                   >
                     Password
                   </label>
@@ -189,7 +199,11 @@ const Register = () => {
                       name="password"
                       onChange={handlePasswordChange}
                       onFocus={handlePasswordFocus}
-                      style={{ width: "70%",paddingTop: "1.2rem",textAlign : "left" }}
+                      style={{
+                        width: "70%",
+                        paddingTop: "1.2rem",
+                        textAlign: "left",
+                      }}
                     />
                     <button
                       className="bg-white fw-4 eye-icon"
@@ -222,7 +236,7 @@ const Register = () => {
 
             <div className="col-xs- mt-1 d-flex mx-4">
               <button
-                className="btn mb-5"
+                className="btn mb-5 icon-hover"
                 type="button"
                 style={{
                   backgroundColor: "rgb(115, 82, 199,0)",
@@ -266,18 +280,9 @@ const Register = () => {
                   </svg>
                 </svg>
               </button>
-              <span
-                style={{
-                  fontSize: "1rem",
-                  marginTop: "0.4rem",
-                  fontWeight: "bold",
-                  fontFamily: "Arial",
-                }}
-              >
-                or
-              </span>
+             
               <button
-                className="btn mb-5"
+                className="btn mb-5 icon-hover"
                 type="button"
                 style={{
                   backgroundColor: "rgb(115, 82, 199,0)",

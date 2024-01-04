@@ -78,49 +78,49 @@ const Login = () => {
         </div>
 
         <div className="col-xs-12 col-md-6" style={{ marginTop: "4rem" }}>
-         <div className="row mx-2 anima-form">
-         <div className="fw-semibold">
-            <h2
-              style={{
-                fontWeight: "bold",
-                fontSize: "1.5rem",
-                fontFamily: "NoirPro, Arial",
-                color: "purple",
-              }}
-            >
-              Sign In
-            </h2>
-          </div>
+          <div className="row mx-2 anima-form">
+            <div className="fw-semibold">
+              <h2
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "1.5rem",
+                  fontFamily: "NoirPro, Arial",
+                  color: "purple",
+                }}
+              >
+                Sign In
+              </h2>
+            </div>
 
-          <div className="row mt-2" style={{ fontSize: "1.3rem" }}>
-            <form action="" onSubmit={handleSubmit} >
-              <div className="col-xs-12 ">
-                <div className={`mb-4 mt-4 ${emailFocused ? "focused" : ""}`}>
-                  <label
-                    htmlFor="formControlLgEmail"
-                    className="form-label fw-semibold"
-                    style={{ fontSize: "1rem" }}
-                  >
-                    Email
-                  </label>
-                  <input
-                    className="form-control form-control-lg"
-                    style={{
-                      paddingTop: "1.2rem",
-                      textAlign: "left",
-                      width: "70%",
-                    }}
-                    id="formControlLgEmail"
-                    type="email"
-                    value={email}
-                    onChange={handleEmailChange}
-                    onFocus={handleEmailFocus}
-                    onBlur={handleEmailBlur}
-                  />
+            <div className="row mt-2" style={{ fontSize: "1.3rem" }}>
+              <form action="" onSubmit={handleSubmit}>
+                <div className="col-xs-12 ">
+                  <div className={`mb-4 mt-4 ${emailFocused ? "focused" : ""}`}>
+                    <label
+                      htmlFor="formControlLgEmail"
+                      className="form-label fw-semibold"
+                      style={{ fontSize: "1rem" }}
+                    >
+                      Email
+                    </label>
+                    <input
+                      className="form-control form-control-lg"
+                      style={{
+                        paddingTop: "1.2rem",
+                        textAlign: "left",
+                        width: "70%",
+                      }}
+                      id="formControlLgEmail"
+                      type="email"
+                      value={email}
+                      onChange={handleEmailChange}
+                      onFocus={handleEmailFocus}
+                      onBlur={handleEmailBlur}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="col-xs-12">
-                {/* <div className={`mb-4 ${passwordFocused ? "focused" : ""}`}>
+                <div className="col-xs-12">
+                  {/* <div className={`mb-4 ${passwordFocused ? "focused" : ""}`}>
                   <label
                     htmlFor="formControlLgPassword"
                     className="form-label fw-semibold"
@@ -161,57 +161,61 @@ const Login = () => {
                     {showPassword ? <BiHide /> : <BiShow />}
                   </button>
                 </div> */}
-                <div className={`mb-4 ${passwordFocused ? "focused" : ""}`}>
-                  <label
-                    htmlFor="formControlLgPassword"
-                    className="form-label fw-semibold"
-                    style={{ fontSize: "1rem",zIndex : "1" }}
-                  >
-                    Password
-                  </label>
-                  <div className="relative">
-                    <input
-                      className="form-control form-control-lg"
-                      id="formControlLgPassword"
-                      type={showPassword ? "text" : "password"}
-                      value={password}
-                      name="password"
-                      onChange={handlePasswordChange}
-                      onFocus={handlePasswordFocus}
-                      style={{ width: "70%",paddingTop: "1.2rem",textAlign : "left" }}
-                    />
-                    <button
-                      className="bg-white fw-4 eyes"
-                      type="button"
-                      style={{ border: "none", outline: "none" }}
-                      onClick={handlePasswordVisibility}
+                  <div className={`mb-4 ${passwordFocused ? "focused" : ""}`}>
+                    <label
+                      htmlFor="formControlLgPassword"
+                      className="form-label fw-semibold"
+                      style={{ fontSize: "1rem", zIndex: "1" }}
                     >
-                      {showPassword ? <BiHide /> : <BiShow />}
-                    </button>
+                      Password
+                    </label>
+                    <div className="relative">
+                      <input
+                        className="form-control form-control-lg"
+                        id="formControlLgPassword"
+                        type={showPassword ? "text" : "password"}
+                        value={password}
+                        name="password"
+                        onChange={handlePasswordChange}
+                        onFocus={handlePasswordFocus}
+                        style={{
+                          width: "70%",
+                          paddingTop: "1.2rem",
+                          textAlign: "left",
+                        }}
+                      />
+                      <button
+                        className="bg-white fw-4 eyes"
+                        type="button"
+                        style={{ border: "none", outline: "none" }}
+                        onClick={handlePasswordVisibility}
+                      >
+                        {showPassword ? <BiHide /> : <BiShow />}
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-xs-12 d-flex justify-content-left mt-2">
-                <button
-                  className="w-50 p-1 fw-semibold  rounded btn-hover-effect"
-                  type="submit"
+                <div className="col-xs-12 d-flex justify-content-left mt-2">
+                  <button
+                    className="w-50 p-1 fw-semibold  rounded btn-hover-effect"
+                    type="submit"
+                  >
+                    SIGN IN
+                  </button>
+                </div>
+              </form>
+              <div className="col-xs-12">
+                <div
+                  className="col-xs-12 d-flex justify-content-left mt-4"
+                  style={{ fontSize: "1rem" }}
                 >
-                  SIGN IN
-                </button>
-              </div>
-            </form>
-            <div className="col-xs-12">
-              <div
-                className="col-xs-12 d-flex justify-content-left mt-4"
-                style={{ fontSize: "1rem" }}
-              >
-                <p className="fw-semibold">
-                  Dont have an account <Link to="/">Sign Up</Link>
-                </p>
+                  <p className="fw-semibold">
+                    Dont have an account <Link to="/">Sign Up</Link>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-         </div>
         </div>
       </div>
     </div>
