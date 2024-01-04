@@ -68,7 +68,7 @@ const Login = () => {
 
   return (
     <div className="p-3 my-5 fluid" >
-      <div className="row mx-4 " style={{marginTop : "5rem"}}>
+      <div className="row mx-4 " >
         <div className="col-xs-12 col-md-6 mt-auto">
           <img
             src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
