@@ -4,7 +4,6 @@ body {
 
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(to right,  rgb(255, 255, 255), rgb(115, 82, 199));
-
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, rgba(107, 17, 203, 0.927), rgb(213, 184, 225),rgba(107, 17, 203, 0.936))
 }

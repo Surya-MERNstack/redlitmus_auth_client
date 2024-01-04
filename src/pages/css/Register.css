@@ -58,8 +58,16 @@
   transition: all 0.2s ease-in-out;
 }
 
+.icon-hover{
+  background-color: rgb(115, 82, 199,0),
+  text-align : "center",
+  /* // boxShadow: " rgb(255, 255, 255) 0px 5px 15px", */
+  borderRadius: "50%",
+}
+
 .icon-hover:hover{
-  background: #fff;
+   box-shadow:  rgb(255, 255, 255) 0px 5px 15px,
+
 }
 
 .anima-img {
