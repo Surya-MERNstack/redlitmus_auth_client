@@ -29,13 +29,14 @@
     outline: none;
     border: none;
     color: white;
-    transition: all 0.4s;
   }
 
   .btn-hover-effect:hover{
-    border : 2px solid #7352C7;
+    border : 1.4px solid #7352C7;
     background: white;
     color: #7352C7;
+    transition: all 0.1s ease-in-out;
+
   }
 
   

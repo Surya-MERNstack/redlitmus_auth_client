@@ -193,7 +193,7 @@ const Login = () => {
               </div>
               <div className="col-xs-12 d-flex justify-content-left mt-2">
                 <button
-                  className="w-50 p-2 fw-semibold  rounded btn-hover-effect"
+                  className="w-50 p-1 fw-semibold  rounded btn-hover-effect"
                   type="submit"
                 >
                   SIGN IN
@@ -203,7 +203,7 @@ const Login = () => {
             <div className="col-xs-12">
               <div
                 className="col-xs-12 d-flex justify-content-left mt-4"
-                style={{ fontSize: "1.1rem" }}
+                style={{ fontSize: "1rem" }}
               >
                 <p className="fw-semibold">
                   Dont have an account <Link to="/">Sign Up</Link>

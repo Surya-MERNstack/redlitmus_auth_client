@@ -71,23 +71,24 @@ const Register = () => {
   return (
     <div className="p-3 my-5 fluid mt-2 ">
       <div className="row ">
-        <div className="col-xs-12 col-md-6 -mt-2 anima-img">
+        <div className="col-xs-12 col-md-6 -mt-2 anima-img  d-flex justify-content-center h-full">
           <img
             src={register}
             // src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
             className="img-fluid"
             alt="Phone image"
+            width="60%"
           />
           <img />
         </div>
 
         <div className="col-xs-12 col-md-6" >
-          <div className="row mx-2 anima-form">
+          <div className="row mx-2 anima-form mt-5">
             <div className="fw-semibold">
               <h2
                 style={{
                   fontWeight: "bold",
-                  fontSize: "2rem",
+                  fontSize: "1.4rem",
                   fontFamily: "NoirPro, Arial",
                   color: "purple",
                 }}
@@ -202,7 +203,7 @@ const Register = () => {
               </div>
               <div className="col-xs-12 d-flex justify-content-left mt-4">
                 <button
-                  className="w-50 p-2 fw-semibold  rounded btn-hover-effect"
+                  className="w-50 p-1 fw-semibold  rounded btn-hover-effect"
                   type="submit"
                 >
                   SIGN UP
@@ -214,13 +215,13 @@ const Register = () => {
                 Already I have an account <Link to="/login">Sign Up</Link>
               </p>
             </div>
-            <div className="col-xs-12 d-flex justify-content-center mt-3">
+            <div className="col-xs-12 d-flex justify-content-center mt-1">
               <hr className=" border-white d-flex col"></hr>
             </div>
 
-            <div className="col-xs- mt-3 d-flex mx-4">
+            <div className="col-xs- mt-1 d-flex mx-4">
               <button
-                className="btn mb-4"
+                className="btn mb-5"
                 type="button"
                 style={{
                   backgroundColor: "rgb(115, 82, 199,0)",
@@ -233,8 +234,8 @@ const Register = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  width="50"
-                  height="50"
+                  width="25"
+                  height="25"
                   viewBox="0 0 48 48"
                 >
                   <svg
@@ -266,8 +267,8 @@ const Register = () => {
               </button>
               <span
                 style={{
-                  fontSize: "1.4rem",
-                  marginTop: "1rem",
+                  fontSize: "1rem",
+                  marginTop: "0.4rem",
                   fontWeight: "bold",
                   fontFamily: "Arial",
                 }}
@@ -275,7 +276,7 @@ const Register = () => {
                 or
               </span>
               <button
-                className="btn mb-4"
+                className="btn mb-5"
                 type="button"
                 style={{
                   backgroundColor: "rgb(115, 82, 199,0)",
@@ -289,8 +290,8 @@ const Register = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  width="50"
-                  height="50"
+                  width="25"
+                  height="25"
                   viewBox="0 0 48 48"
                 >
                   <linearGradient
