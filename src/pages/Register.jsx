@@ -71,7 +71,7 @@ const Register = () => {
   return (
     <div className="p-3 my-5 fluid">
       <div className="row ">
-        <div className="col-xs-12 col-md-6 -mt-2 anima-img  d-flex justify-content-center border border-white" style={{marginTop : "-5rem", height : "80%"}}>
+        <div className="col-xs-12 col-md-6 -mt-2 anima-img  d-flex justify-content-center " style={{marginTop : "-5rem", height : "80%"}}>
           <img
           style={{objectFit : "fit"}}
             src={register}
