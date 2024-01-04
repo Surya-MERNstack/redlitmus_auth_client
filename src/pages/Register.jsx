@@ -81,7 +81,7 @@ const Register = () => {
           <img />
         </div>
 
-        <div className="col-xs-12 col-md-6" style={{ marginTop: "4rem" }}>
+        <div className="col-xs-12 col-md-6" >
           <div className="row mx-2 anima-form">
             <div className="fw-semibold">
               <h2
