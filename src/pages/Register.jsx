@@ -55,24 +55,23 @@ const Register = () => {
     if (username.length < 5) {
       return toast.error("name should be min 5 words");
     }
-    if(email === "") toast.error("enter the email")
-    const strongPasswordRegex =
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{5,}$/;
+    if (email === "") toast.error("enter the email");
+    const strongPasswordRegex = /^(?=.*[A-Z])(?=.*[@$!%*?&]).{5,}$/;
+
     if (!strongPasswordRegex.test(password)) {
       return toast.error(
-        "Password should be at least 8 characters one special character among @$!%*?&"
+        "Password should contain at least 1 uppercase letter, 5 characters, and one special character among @$!%*?&"
       );
-    }
-    else toast.success('Sign up Successfully')
-    navigate('/login')
+    } else toast.success("Sign up Successfully");
+    navigate("/login");
   };
 
   console.log(username);
 
   return (
     <div className="p-3 my-5 fluid mt-2 ">
-      <div className="row">
-        <div className="col-xs-12 col-md-6 -mt-2">
+      <div className="row ">
+        <div className="col-xs-12 col-md-6 -mt-2 anima-img">
           <img
             src={register}
             // src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
@@ -82,8 +81,8 @@ const Register = () => {
           <img />
         </div>
 
-        <div className="col-xs-12 col-md-6" style={{marginTop : "4rem"}}>
-          <div className="row mx-2">
+        <div className="col-xs-12 col-md-6" style={{ marginTop: "4rem" }}>
+          <div className="row mx-2 anima-form">
             <div className="fw-semibold">
               <h2
                 style={{
@@ -142,7 +141,7 @@ const Register = () => {
                     style={{ width: "70%" }}
                   />
                 </div>
-                <div className={`mb-4 ${passwordFocused ? "focused" : ""}`}>
+                {/* <div className={`mb-4 ${passwordFocused ? "focused" : ""}`}>
                   <label
                     htmlFor="formControlLgPassword"
                     className="form-label fw-semibold"
@@ -151,7 +150,7 @@ const Register = () => {
                     Password
                   </label>
                   <input
-                    className="form-control form-control-lg"
+                    className="form-control form-control-lg relative"
                     id="formControlLgPassword"
                     type={showPassword ? "text" : "password"}
                     value={password}
@@ -163,13 +162,42 @@ const Register = () => {
                     style={{ width: "70%" }}
                   />
                   <button
-                    className="bg-white fw-4 eye -left-2"
+                    className="bg-white fw-4"
                     type="button"
                     style={{ border: "none", outline: "none" }}
                     onClick={handlePasswordVisibility}
                   >
                     {showPassword ? <BiHide /> : <BiShow />}
                   </button>
+                </div> */}
+                <div className={`mb-4 ${passwordFocused ? "focused" : ""}`}>
+                  <label
+                    htmlFor="formControlLgPassword"
+                    className="form-label fw-semibold"
+                    style={{ fontSize: "1rem" }}
+                  >
+                    Password
+                  </label>
+                  <div className="relative">
+                    <input
+                      className="form-control form-control-lg"
+                      id="formControlLgPassword"
+                      type={showPassword ? "text" : "password"}
+                      value={password}
+                      name="password"
+                      onChange={handlePasswordChange}
+                      onFocus={handlePasswordFocus}
+                      style={{ width: "70%" }}
+                    />
+                    <button
+                      className="bg-white fw-4 eye-icon"
+                      type="button"
+                      style={{ border: "none", outline: "none" }}
+                      onClick={handlePasswordVisibility}
+                    >
+                      {showPassword ? <BiHide /> : <BiShow />}
+                    </button>
+                  </div>
                 </div>
               </div>
               <div className="col-xs-12 d-flex justify-content-left mt-4">

@@ -53,13 +53,14 @@ const Login = () => {
     if (email === "") {
       return toast.error("name should be min 5 words");
     }
-    const strongPasswordRegex =
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    const strongPasswordRegex = /^(?=.*[A-Z])(?=.*[@$!%*?&]).{5,}$/;
+
     if (!strongPasswordRegex.test(password)) {
       return toast.error(
-        "Password should be at least 8 characters one special character among @$!%*?&"
+        "Password should contain at least 1 uppercase letter, 5 characters, and one special character among @$!%*?&"
       );
-    } else toast.success("login Successfully!!!");
+    }
+    else toast.success("login Successfully!!!");
     console.log("clicked");
   };
 
@@ -104,7 +105,7 @@ const Login = () => {
                   </label>
                   <input
                     className="form-control form-control-lg"
-                    style={{ padding: "0.5rem", width: "70%" }}
+                    style={{ paddingTop: "1.2rem",textAlign : "left", width: "70%"}}
                     id="formControlLgEmail"
                     type="email"
                     value={email}
@@ -126,7 +127,7 @@ const Login = () => {
                   <input
                     className="form-control form-control-lg"
                     id="formControlLgPassword"
-                    style={{ padding: "0.5rem", width: "70%" }}
+                    style={{  paddingTop: "1.2rem",textAlign : "left", width: "70%" }}
                     type={showPassword ? "text" : "password"}
                     value={password}
                     onChange={handlePasswordChange}
