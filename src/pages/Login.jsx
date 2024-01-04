@@ -83,7 +83,7 @@ const Login = () => {
             <h2
               style={{
                 fontWeight: "bold",
-                fontSize: "2rem",
+                fontSize: "1.5rem",
                 fontFamily: "NoirPro, Arial",
                 color: "purple",
               }}
@@ -92,7 +92,7 @@ const Login = () => {
             </h2>
           </div>
 
-          <div className="row mt-3" style={{ fontSize: "1.3rem" }}>
+          <div className="row mt-2" style={{ fontSize: "1.3rem" }}>
             <form action="" onSubmit={handleSubmit} >
               <div className="col-xs-12 ">
                 <div className={`mb-4 mt-4 ${emailFocused ? "focused" : ""}`}>
