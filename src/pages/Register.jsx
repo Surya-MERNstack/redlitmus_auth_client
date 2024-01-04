@@ -203,7 +203,7 @@ const Register = () => {
               </div>
               <div className="col-xs-12 d-flex justify-content-left mt-4">
                 <button
-                  className="w-50 p-1 fw-semibold  rounded btn-hover-effect"
+                  className="w-50 p-1   rounded btn-hover-effect"
                   type="submit"
                 >
                   SIGN UP
